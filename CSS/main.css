@@ -1,5 +1,12 @@
-p {
+.navbar .container-fluid {
+	margin-left: 10%;
+}
 
-	font-size: 44px;
-
+#myNavbar li, .navbar-header .navbar-brand{
+	margin-right: 30px;
+}
+.container {
+	background-color: #E89619;
+	height: 100%;
+	width: 100%;
 }
