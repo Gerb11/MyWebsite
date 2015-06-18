@@ -2,16 +2,12 @@
  	<head lang="en">
  		<meta charset="uft-8">
  		<meta name="viewport" content="width=device-width, initial-scale=1">
- 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="./CSS/main.css"></link>
-		<script type="text/javascript" src="./JavaScript/Apps/app.js"></script>
  	</head>
 
  	<body>
@@ -27,8 +23,8 @@
 				</div>	
 				<div id="myNavbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a class="active" href="#">About</a></li>
-						<li><a href="#">Music</a></li>
+						<li><a class="active" href="Partials/about.html">About</a></li>
+						<li><a href="Partials/music.html">Music</a></li>
 						<li><a href="#">Subscribe</a></li>
 						<li><a href="#">For Fun</a></li>
 					</ul>
@@ -36,21 +32,7 @@
 			</div>
 		</nav>
 
-		<div id="wrap">
-			<div class="container">
-				<div id="myImageContainer">
-					<img src="./img/Taylor_GS Mini.jpg" class="img-responsive">
-				</div>	
-				<section id="aboutInfo">  
-					<div class="jumbotron">
-						<h1>About me!</h1>
-						<p>In short, I like to code, exercise and do music related activities like writing and recording.</p>
-					</div>
-					<h2>Some more details...</h2>
-					<p>Hey jude</p>
-				</section>
-			</div>
-		</div>
+		<div ng-view></div>
 
 		<nav class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="container-fluid">
@@ -58,4 +40,9 @@
 			</div>
 		</nav>
 	</body>
+
+	<script type="text/javascript" src="./JavaScript/Apps/app.js"></script>
+	<script type="text/javascript" src="./JavaScript/Router/routes.js"></script>
+	<script type="text/javascript" src="./JavaScript/Controllers/aboutPageController.js"></script>
+
 </html>
