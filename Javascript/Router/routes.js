@@ -1,15 +1,14 @@
-app.config(['$routeProvider',
-	function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
 		$routeProvider.
 			when('/about', {
-       			templateUrl: '/Partials/about.html',
+       			templateUrl: 'Partials/about.html',
         		controller: '/Javascript/Controllers/aboutPageController.js',
         		controllerAs: 'about'
       		}).
       		otherwise({
-        		redirectTo: '/Partials/about.html',
+        		redirectTo: 'Partials/about.html',
         		controller: '/Javascript/Controllers/aboutPageController.js',
         		controllerAs: 'about'
    			});
-	}
-]);
+    //$locationProvider.html5Mode(true);
+});
