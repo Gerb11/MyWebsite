@@ -9,6 +9,8 @@
 	margin-top: 50px;
 	background-color: #E89619;
 	width: 100%;
+	height: 100%;
+	overflow: scroll;
 }
 #myImageContainer {
 	width: 32%;
